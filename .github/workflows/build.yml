@@ -10,6 +10,7 @@ jobs:
             sudo apt install nodejs
             npm --version
             node --version
+            npm install
 
       - name: Execute script
         run: node app.js
