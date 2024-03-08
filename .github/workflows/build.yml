@@ -1,0 +1,15 @@
+name: Api-Spammer
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check env
+        run: |
+            sudo apt install nodejs
+            npm --version
+            node --version
+
+      - name: Execute script
+        run: node app.js
